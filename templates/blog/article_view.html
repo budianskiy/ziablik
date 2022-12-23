@@ -10,7 +10,7 @@
 
     <p>
         {% for tag in article.tags.all %}
-            <a href="{% url 'tag-search_view' tag_id=tag.id %}">#{{ tag.name }}</a>&nbsp
+            <a href="{% url 'tag_search_view' tag_id=tag.id %}">#{{ tag.name }}</a>&nbsp
         {% endfor %}
 
     </p>
