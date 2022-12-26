@@ -32,3 +32,5 @@ class UserAdmin(UserAdmin):
     search_fields = ("username", "first_name", "last_name", "email")
     readonly_fields = ['image_tag']
     list_display_links = ['id', 'username', 'image_tag_thumbnail']
+
+
