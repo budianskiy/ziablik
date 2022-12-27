@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+from apps.user.models import User
 from django.db import models
 from imagekit.models import ProcessedImageField, ImageSpecField
 from pilkit.processors import ResizeToFill
