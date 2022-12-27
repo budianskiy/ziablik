@@ -23,7 +23,9 @@ class BlogCategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Article)
 class ArticleAdmin(admin.ModelAdmin):
+
     list_display = ['id', 'title', 'category_link', 'user','publish_date', 'created_at', 'tag_link']
+
     list_display_links = ['id', 'title']
     list_filter = ['category', 'tags']
 
@@ -43,3 +45,8 @@ class ArticleAdmin(admin.ModelAdmin):
 
 
     tag_link.short_description = 'Теги'
+
+    # def author(self, instance):
+    #     pass
+    #
+    # author.short_description = 'Автор'

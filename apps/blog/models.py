@@ -3,6 +3,7 @@ from django.db import models
 from imagekit.models import ProcessedImageField, ImageSpecField
 from pilkit.processors import ResizeToFill
 from django.utils.safestring import mark_safe
+
 from config.settings import MEDIA_ROOT
 
 # Create your models here.
@@ -49,6 +50,17 @@ class Article(models.Model):
     text = models.TextField(verbose_name='Текст')
     publish_date = models.DateTimeField(verbose_name = 'Дата публикации')
     tags = models.ManyToManyField(to = 'Tag', verbose_name = 'Теги', blank = True)
+
+    author = models.CharField(verbose_name='Автор', max_length=255, null=True, blank=True)
+    author_image = ProcessedImageField(
+        verbose_name='Аватарка автора',
+        upload_to='blog/article/',
+        processors=[],
+        null=True,
+        blank=True
+    )
+
+
     image = ProcessedImageField(
         verbose_name='Изображение',
         upload_to='blog/article/',
