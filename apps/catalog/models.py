@@ -53,11 +53,21 @@ class Category(MPTTModel):
         verbose_name_plural='Категории'
 
 
-class Product():
+
+class Product(models.Model):
     name = models.CharField(verbose_name='Название', max_length=255)
-    slug = models.CharField(verbose_name='Слаг(Алиас/ЧПУ)', max_length=255)
+    slug = models.SlugField(unique=True, verbose_name='Слаг(Алиас/ЧПУ)')
     description = models.TextField(verbose_name='Описание', null=True, blank=True)
-    quantity = int
+    quantity = models.IntegerField(verbose_name='Количество')
     price = models.DecimalField(verbose_name='Цена', max_digits=12, decimal_places=2, default=0)
-    created_at = models.DateTimeField(verbose_name='Дата создания', auto_now_add = True)
     updated_at = models.DateTimeField(verbose_name='Дата изменения', auto_now = True)
+    created_at = models.DateTimeField(verbose_name='Дата создания', auto_now_add = True)
+
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name='Товар'
+        verbose_name_plural='Товары'
+
