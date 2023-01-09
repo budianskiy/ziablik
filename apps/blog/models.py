@@ -1,3 +1,4 @@
+from apps.main.mixins import MetaTagMixin
 from apps.user.models import User
 from django.db import models
 from imagekit.models import ProcessedImageField, ImageSpecField
@@ -42,7 +43,7 @@ class BlogCategory(models.Model):
     image_tag.short_description = 'Изображение'
 
 
-class Article(models.Model):
+class Article(MetaTagMixin):
     category = models.ForeignKey(to=BlogCategory, verbose_name='Категория', on_delete=models.CASCADE)
     user = models.ForeignKey(User, verbose_name='Автор', on_delete=models.SET_NULL, null=True, blank=True)
     title = models.CharField(verbose_name='Заголовок', max_length=255)
@@ -84,7 +85,7 @@ class Article(models.Model):
         verbose_name_plural = 'Статьи'
 
 
-class Tag(models.Model):
+class Tag(MetaTagMixin):
     name = models.CharField(verbose_name='Тег', max_length=255)
 
     def __str__(self):
