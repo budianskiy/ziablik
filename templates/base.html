@@ -58,9 +58,13 @@
 </div>
 
 <div class="container">
+    {% block breadcrumbs %}
+    {% endblock %}
+
     {% block content %}
     {% endblock %}
 </div>
+
 
 </body>
 </html>
