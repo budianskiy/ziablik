@@ -26,8 +26,14 @@
         <div class="col-6">
             <img src="{% static 'img/download1.jpg' %}" alt="" id="logo">
         </div>
-        <div class="col-6"><p class="header-text">ыарволытаиовтч вадвьбу в юаб <br> Работаем круглосуточно
-            <br> Наш номертелефона:050 102 30 04 </p></div>
+        <div class="col-6">
+            <p class="header-text">ыарволытаиовтч<br> Работаем круглосуточно<br> Наш номертелефона:050 102 30 04 </p>
+            {% if request.user.is_aunthenticated %}
+                <p class="text-end">Привет, {{ request.user.username }} (<a href="{% url 'logout' %}}">Выйти с акаунта</a>)</p>
+            {% else %}
+                <p class="text-end"><a href="{% url "login" %} ">Войти в акаунт /</a>&nbsp;<a href="{% url "register" %}">Зарегистрироваться</a></p>
+            {% endif %} 
+        </div>
     </div>
     <div class="row main-menu">
         <nav class="navbar navbar-expand-lg bg-light">
