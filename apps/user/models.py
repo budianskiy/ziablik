@@ -22,7 +22,7 @@ class User(AbstractUser, models.Model):
         source='image',
         processors=[ResizeToFill(200, 200)]
     )
-
+    about = models.TextField(verbose_name='О себе', blank=True, null=True)
     def image_tag_thumbnail(self):
         if self.image:
             if not self.image_thumbnail:
