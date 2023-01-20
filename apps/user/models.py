@@ -7,8 +7,9 @@ from pilkit.processors import ResizeToFill
 from config.settings import MEDIA_ROOT
 
 
-class User(AbstractUser):
+class User(AbstractUser, models.Model):
     phone = PhoneNumberField(verbose_name='Телефон', blank=True, null=True)
+    about = models.TextField(verbose_name='Про себя(не обязательно)', default='Тут пока ничего нету')
 
     image = ProcessedImageField(
         verbose_name='Изображение',
