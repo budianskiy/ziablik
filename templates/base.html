@@ -28,7 +28,7 @@
         </div>
         <div class="col-6">
             <p class="header-text">ыарволытаиовтч<br> Работаем круглосуточно<br> Наш номертелефона:050 102 30 04 </p>
-            {% if request.user.is_aunthenticated %}
+            {% if request.user.is_authenticated %}
                 <p class="text-end">Привет, {{ request.user.username }} (<a href="{% url 'logout' %}}">Выйти с акаунта</a>)</p>
             {% else %}
                 <p class="text-end"><a href="{% url "login" %} ">Войти в акаунт /</a>&nbsp;<a href="{% url "register" %}">Зарегистрироваться</a></p>
@@ -54,6 +54,10 @@
 
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'blog_category_list' %}">Блог</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'cart_view' %}">Корзина</a>
                         </li>
                     </ul>
                 </div>

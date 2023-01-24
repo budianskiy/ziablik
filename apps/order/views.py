@@ -26,7 +26,7 @@ def add_to_cart_view(request):
             Cart.objects.filter(id=row.id).update(quantity=row.quantity + cd['quantity'])
         else:
             form.save()
-        form.save()
+
 
         return render(
             request, 'order/added.html',
@@ -36,6 +36,8 @@ def add_to_cart_view(request):
 
 @login_required
 def cart_view(request):
+
     cart = get_cart_data(request.user)
     breadcrumbs = {'current': "Корзина"}
     return render(request, 'order/cart.html', {'cart': cart, 'breadcrumbs': breadcrumbs})
+
