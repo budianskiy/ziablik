@@ -26,7 +26,7 @@ def add_to_cart(request):
             Cart.objects.filter(id=row.id).update(quantity=row.quantity + cd['quantity'])
         else:
             form.save()
-        form.save()
+
 
         return render(
             request, 'order/added.html',
