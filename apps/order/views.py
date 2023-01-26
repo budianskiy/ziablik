@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse
 
 from apps.order.forms import AddToCartForm, CreateOrderForm
 from apps.order.models import Cart
@@ -14,6 +15,7 @@ def get_cart_data(user):
 
 @login_required
 def add_to_cart_view(request):
+    breadcrumbs = {'current': "Добавление в корзину"}
     data = request.GET.copy()
     data.update(user=request.user)
     request.GET = data
@@ -30,7 +32,7 @@ def add_to_cart_view(request):
 
         return render(
             request, 'order/added.html',
-            {"product": cd['product'], "cart": get_cart_data(cd['user'])}
+            {"product": cd['product'], "cart": get_cart_data(cd['user']), 'breadcrumbs': breadcrumbs}
         )
 
 
@@ -46,6 +48,7 @@ def create_order_view(request):
     error = None
     user = request.user
     cart = get_cart_data(request.user)
+    breadcrumbs = {'current': "Оформление заказа!"}
     if not cart['cart']:
         return redirect('index')
 
@@ -56,9 +59,10 @@ def create_order_view(request):
 
         form = CreateOrderForm(request.POST)
         if form.is_valid():
+            breadcrumbs = {'current': "Создание заказа"}
             form.save()
             Cart.objects.filter(user=user).delete()
-            return render(request, 'order/created.html')
+            return render(request, 'order/created.html', {'breadcrumbs': breadcrumbs})
         error = form.errors
     else:
         form = CreateOrderForm(data={
@@ -67,4 +71,4 @@ def create_order_view(request):
             'last_name': user.last_name,
             'email': user.email,
         })
-    return render(request, 'order/create.html', {'cart': cart, 'error': error, 'form': form})
+    return render(request, 'order/create.html', {'cart': cart, 'error': error, 'form': form, 'breadcrumbs': breadcrumbs})
