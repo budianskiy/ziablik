@@ -3,7 +3,8 @@ from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 
 from apps.order.forms import AddToCartForm, CreateOrderForm
-from apps.order.models import Cart
+from apps.order.models import Cart, OrderProduct
+from django.db import transaction
 
 
 def get_cart_data(user):
@@ -13,22 +14,25 @@ def get_cart_data(user):
         total += row.quantity * row.product.price
     return {'total': total, 'cart': cart}
 
+
 @login_required
 def add_to_cart_view(request):
     breadcrumbs = {'current': "Добавление в корзину"}
     data = request.GET.copy()
     data.update(user=request.user)
     request.GET = data
-
     form = AddToCartForm(request.GET)
+
     if form.is_valid():
         cd = form.cleaned_data
-        row = Cart.objects.filter(user=cd['user'], product=cd['product']).first()
-        if row:
-            Cart.objects.filter(id=row.id).update(quantity=row.quantity + cd['quantity'])
-        else:
-            form.save()
-
+        csrf = request.session.get('cart_token')
+        if not csrf or csrf != data.get('csrfmiddlewaretoken'):
+            row = Cart.objects.filter(user=cd['user'], product=cd['product']).first()
+            if row:
+                Cart.objects.filter(id=row.id).update(quantity=row.quantity + cd['quantity'])
+            else:
+                form.save()
+        request.session['cart_token'] = data.get('csrfmiddlewaretoken')
 
         return render(
             request, 'order/added.html',
@@ -60,10 +64,25 @@ def create_order_view(request):
         form = CreateOrderForm(request.POST)
         if form.is_valid():
             breadcrumbs = {'current': "Создание заказа"}
-            form.save()
-            Cart.objects.filter(user=user).delete()
-            return render(request, 'order/created.html', {'breadcrumbs': breadcrumbs})
-        error = form.errors
+            try:
+                with transaction.atomic():
+                    order = form.save()
+                    order_products = Cart.objects.filter(user=user).select_related('product')
+
+                    for order_product in order_products:
+                        OrderProduct.objects.create(
+                            order=order,
+                            product=order_product.product,
+                            quantity=order_product.quantity,
+                            price=order_product.product.price,
+                        )
+
+                    Cart.objects.filter(user=user).delete()
+                    return render(request, 'order/created.html', {'breadcrumbs': breadcrumbs})
+            except Exception as e:
+                error = f'Заказ не создал. {e}. Напишите, пожалуйтса, нашему менеджеру'
+        else:
+            error = form.errors
     else:
         form = CreateOrderForm(data={
             'phone': user.phone if user.phone else '',
@@ -72,3 +91,9 @@ def create_order_view(request):
             'email': user.email,
         })
     return render(request, 'order/create.html', {'cart': cart, 'error': error, 'form': form, 'breadcrumbs': breadcrumbs})
+
+
+@login_required
+def delete_from_cart_view(request, product_id):
+    Cart.objects.filter(user=request.user, product=product_id).delete()
+    return redirect('cart')
