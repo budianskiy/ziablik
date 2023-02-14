@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="975ef711-92eb-4414-b249-6839098d91ef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ziablik.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ziablik.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/catalog/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/catalog/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/api/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/catalog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/catalog/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +31,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ziablik" type="Python.DjangoServer" factoryName="Django server">
       <module name="ziablik" />
@@ -93,5 +89,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="drf categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="drf categories" />
   </component>
 </project>
