@@ -33,18 +33,37 @@ class ArticleViewSet(viewsets.ModelViewSet):
             return [permission() for permission in [permissions.IsAdminUser]]
         return [permission() for permission in [permissions.AllowAny]]
 
-    def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-
+    @staticmethod
+    def check_tags(tags_list):
         tags = []
-        for tag_name in serializer.validated_data.get('tags'):
+        for tag_name in Tag.objects.validated_data.get('tags'):
             tag = Tag.objects.filter(name=tag_name).first()
             if not tag:
                 tag = Tag.objects.create(name=tag_name)
             tags.append(tag)
+        return tags
 
-        article = serializer.save(user=self.request.user, tags=tags)
+    def save_model(self, serializer, request):
+
+        article = serializer.save(user=self.request.user, tags=self.check_tags(serializer.validated_data.get('tags')))
         read_serializer = self.serializer_class(article, context={'request': request})
 
+        return read_serializer
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        read_serializer = self.save_model(request, serializer)
+
         return Response(read_serializer.data, status=status.HTTP_201_CREATED)
+
+
+    def update(self, request, *args, **kwargs):
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        read_serializer = self.save_model(request, serializer)
+
+        return Response(read_serializer.data, status=status.HTTP_200_OK)
