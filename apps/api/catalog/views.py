@@ -7,7 +7,7 @@ class ProductListView(generics.ListAPIView):
     serializer_class = ProductReadSerializer
     # queryset = Product.objects.filter(is_checked=True)
 
-    def get_quaryset(self):
+    def get_queryset(self):
         queryset = Product.objects.filter(is_checked=True)
 
 
