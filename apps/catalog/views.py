@@ -42,8 +42,6 @@ class ProductsByCategoryView(generic.ListView):
         return context
 
 
-
-
 class ProductDeteilView(generic.DeleteView):
     model = Product
     template_name = 'catalog/product.html'
@@ -68,4 +66,3 @@ class ProductDeteilView(generic.DeleteView):
         context = super().get_context_data(**kwargs)
         context.update({'breadcrumbs': self.set_breadcrumbs()})
         return context
-3
