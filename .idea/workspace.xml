@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="975ef711-92eb-4414-b249-6839098d91ef" name="Changes" comment="drf and HTMLField">
+    <list default="true" id="975ef711-92eb-4414-b249-6839098d91ef" name="Changes" comment="homework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/main/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/pages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/catalog/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/catalog/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,22 +44,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/alexe/OneDrive/Documents/GitHub/ziablik/data"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexe/OneDrive/Documents/GitHub/ziablik/data&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alexe\OneDrive\Documents\GitHub\ziablik\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\alexe\OneDrive\Documents\GitHub\ziablik\data" />
+      <recent name="C:\Users\alexe\OneDrive\Documents\GitHub\ziablik\static" />
       <recent name="C:\Users\alexe\OneDrive\Documents\GitHub\ziablik\templates\main" />
+      <recent name="C:\Users\alexe\OneDrive\Documents\GitHub\ziablik\data" />
     </key>
   </component>
   <component name="RunManager">

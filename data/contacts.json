@@ -1,0 +1,14 @@
+[
+  {
+    "model": "main.page",
+    "pk": 3,
+    "fields": {
+      "name": "Контакты",
+      "slug": "contacts",
+      "meta_title": "our_contacts",
+      "meta_description": "contacts",
+      "meta_keywords": "contacts",
+      "text": "admin - 099876545464"
+    }
+  }
+]

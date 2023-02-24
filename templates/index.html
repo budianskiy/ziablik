@@ -5,6 +5,10 @@
 {% endblock %}
 
 {% block content %}
-    <h3>Привет! Ты на главное странице</h3>
+    {{ page.text | safe }}
+    {% for product_set in product_sets %}
+        {% include 'main/_product_set.html' %}
+    {% endfor %}
+
 {% endblock %}
 
