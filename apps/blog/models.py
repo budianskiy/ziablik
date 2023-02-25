@@ -7,7 +7,7 @@ from django.utils.safestring import mark_safe
 
 from config.settings import MEDIA_ROOT
 
-# Create your models here.
+
 class BlogCategory(models.Model):
     name = models.CharField(verbose_name='Имя категории', max_length=255)
     #image = models.ImageField(verbose_name='Изображение', upload_to='blog/category/', null=True)
@@ -94,3 +94,30 @@ class Tag(MetaTagMixin):
     class Meta:
         verbose_name = 'Тег'
         verbose_name_plural = 'Теги'
+
+
+class Comments(models.Model):
+    article = models.ForeignKey(Article, related_name='comments', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, verbose_name='Автор', on_delete=models.SET_NULL, null=True, blank=True)
+    email = models.EmailField(verbose_name='E-mail', null=True, blank=True)
+    body = models.TextField(verbose_name='Текст')
+    is_checked = models.BooleanField(verbose_name='Проверен', default=False)
+    updated_at = models.DateTimeField(verbose_name='Дата изменения', auto_now=True)
+    created_at = models.DateTimeField(verbose_name='Дата создания', auto_now_add=True)
+
+    class Meta:
+        verbose_name = 'Коментарий'
+        verbose_name_plural = 'Коментарии'
+
+
+# class Comments(models.Model):
+#     text = models.TextField(verbose_name='Текст')
+#     user = models.ForeignKey(User, verbose_name='Автор', on_delete=models.SET_NULL, null=True, blank=True)
+#     is_checked = models.BooleanField(verbose_name='Проверен', default=False)
+#     article_id = models.PositiveIntegerField(verbose_name='id статьи')
+#     updated_at = models.DateTimeField(verbose_name='Дата изменения', auto_now=True)
+#     created_at = models.DateTimeField(verbose_name='Дата создания', auto_now_add=True)
+#
+#     class Meta:
+#         verbose_name = 'Коментарий'
+#         verbose_name_plural = 'Коментарии'

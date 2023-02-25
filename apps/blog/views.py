@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.urls import reverse
 
-from apps.blog.models import BlogCategory, Article, Tag
+from apps.blog.forms import CommentForm
+from apps.blog.models import BlogCategory, Article, Tag, Comments
 
 
 def blog_category_list(request):
@@ -31,3 +32,18 @@ def tag_search_view(request, tag_id):
     tag = Tag.objects.get(id=tag_id)
     articles = Article.objects.filter(tags=tag)
     return render(request, 'blog/tag_search.html', {'tag': tag, 'articles': articles})
+
+
+def comment_view(request, article_id):
+    comments = Comments.objects.get(is_active=True)
+    print(comments)
+    if request.user.is_authenticated:
+        # new_comment = CommentForm.save()
+
+        form = CommentForm(request.POST, request.FILES)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.save()
+            return render(request, 'blog/article_view.html', {'comments': comments})
+
+    return render(request, 'blog/article_view.html', {})
