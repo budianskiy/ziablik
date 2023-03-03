@@ -1,0 +1,175 @@
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM__Changes_.xml	(revision e86192f89c1cf445f24c0930adb957cd8e0619f3)
++++ /dev/null	(revision e86192f89c1cf445f24c0930adb957cd8e0619f3)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM_[Changes]" date="1676651171558" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 2/17/2023 6:24 PM [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM_[Changes]/shelved.patch	(revision e86192f89c1cf445f24c0930adb957cd8e0619f3)
++++ /dev/null	(revision e86192f89c1cf445f24c0930adb957cd8e0619f3)
+@@ -1,55 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"975ef711-92eb-4414-b249-6839098d91ef\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/apps/api/catalog/serializers.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/apps/api/catalog/serializers.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/apps/api/catalog/urls.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/apps/api/catalog/urls.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/apps/api/catalog/views.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/apps/api/catalog/views.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/apps/catalog/admin.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/apps/catalog/admin.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/apps/catalog/models.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/apps/catalog/models.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2LjUQrwVZl5ZWCmMTeiSdAxYT7b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"ziablik\" type=\"Python.DjangoServer\" factoryName=\"Django server\">\r\n      <module name=\"ziablik\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n        <env name=\"DJANGO_SETTINGS_MODULE\" value=\"config.settings\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\r\n      <option name=\"port\" value=\"8000\" />\r\n      <option name=\"host\" value=\"\" />\r\n      <option name=\"additionalOptions\" value=\"\" />\r\n      <option name=\"browserUrl\" value=\"\" />\r\n      <option name=\"runTestServer\" value=\"false\" />\r\n      <option name=\"runNoReload\" value=\"false\" />\r\n      <option name=\"useCustomRunCommand\" value=\"false\" />\r\n      <option name=\"customRunCommand\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"975ef711-92eb-4414-b249-6839098d91ef\" name=\"Changes\" comment=\"\" />\r\n      <created>1676383973117</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1676383973117</updated>\r\n      <workItem from=\"1676383986159\" duration=\"2560000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"drf categories\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"drf categories\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision b28161fa2c19a44f75087fe86bc4c9f72575b6f9)
+-+++ b/.idea/workspace.xml	(date 1676650932144)
+-@@ -3,11 +3,6 @@
+-   <component name="ChangeListManager">
+-     <list default="true" id="975ef711-92eb-4414-b249-6839098d91ef" name="Changes" comment="">
+-       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/apps/api/catalog/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/catalog/serializers.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/apps/api/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/catalog/urls.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/apps/api/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/catalog/views.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/apps/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/catalog/admin.py" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/apps/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/catalog/models.py" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-@@ -17,7 +12,7 @@
+-   <component name="Git.Settings">
+-     <option name="RECENT_BRANCH_BY_REPOSITORY">
+-       <map>
+--        <entry key="$PROJECT_DIR$" value="main" />
+-+        <entry key="$PROJECT_DIR$" value="drf_part_4" />
+-       </map>
+-     </option>
+-     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-@@ -26,7 +21,9 @@
+-     <option name="stateVersion" value="1" />
+-   </component>
+-   <component name="ProjectId" id="2LjUQrwVZl5ZWCmMTeiSdAxYT7b" />
+--  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+-+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+-+    <ConfirmationsSetting value="1" id="Add" />
+-+  </component>
+-   <component name="ProjectViewState">
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-@@ -92,6 +89,10 @@
+-   </component>
+-   <component name="VcsManagerConfiguration">
+-     <MESSAGE value="drf categories" />
+--    <option name="LAST_COMMIT_MESSAGE" value="drf categories" />
+-+    <MESSAGE value="drf pfrt 4" />
+-+    <option name="LAST_COMMIT_MESSAGE" value="drf pfrt 4" />
+-+  </component>
+-+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-+    <SUITE FILE_PATH="coverage/ziablik$views.coverage" NAME="views Coverage Results" MODIFIED="1676576419354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/api/blog" />
+-   </component>
+- </project>
+-\ No newline at end of file
+Index: templates/blog/article_view.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% extends 'base.html' %}\r\n\r\n{% block meta_tags %}\r\n    {% if article.get_meta_title %}\r\n        {% include '_meta_tags.html' with meta_title=article.get_meta_title meta_discription=article.meta_description meta_keyword=article.meta_keywords %}\r\n    {% endif %}\r\n\r\n{% endblock %}\r\n\r\n{% block breadcrumbs %}\r\n    {% include '_breadcrumbs.html' %}\r\n{% endblock %}\r\n\r\n{% block content %}\r\n\r\n    <h2>{{ article.title }}</h2>\r\n    {% if article.image %}\r\n        <img class=\"img_thumbnail\" src=\"{{ article.image.url }}\" alt=\"\">\r\n    {% endif %}\r\n\r\n    <p>{{ article.text }}</p>\r\n\r\n    <p>\r\n        {% for tag in article.tags.all %}\r\n            <a href=\"{% url 'tag_search_view' tag_id=tag.id %}\">#{{ tag.name }}</a>&nbsp\r\n        {% endfor %}\r\n\r\n    </p>\r\n\r\n    <p>Автор статьи: {{ author }}</p>\r\n\r\n\r\n    <p style=\"text-align: right\">\r\n        Дата: <b>{{ article.publish_date }}</b>\r\n        Категория: <b>{{ category.name }}</b>\r\n    </p>\r\n\r\n    {% if article.user %}\r\n        <div class=\"text-end\">\r\n            <div class=\"author\">\r\n                {% if article.user.image %}\r\n                    <span class=\"avatar\">\r\n                        <img src=\"{{ article.user.image_thumbnail.url }}\" alt=\"\">\r\n                    </span>\r\n                {% endif %}\r\n                {% if article.user.first_name %}\r\n                    <span class=\"author-name\">{{ article.user.first_name }} {{ article.user.last_name }}</span>\r\n                {% else %}\r\n                    <span class=\"author-name\">{{ article.user.username }}</span>\r\n                {% endif %}\r\n            </div>\r\n        </div>\r\n    {% endif %}\r\n\r\n\r\n    <div class=\"row\">\r\n        <div class=\"col-sm-12 col-md-3\"></div>\r\n        <div class=\"col-sm-12 col-md-6\">\r\n            <h3 class=\"my-header\">Добавить коментарий</h3>\r\n            {% if error %}\r\n                <div class=\"alert alert-danger\" role=\"alert\">\r\n                    {{ error }}\r\n                </div>\r\n            {% endif %}\r\n            <form method=\"post\" enctype=\"multipart/form-data\">\r\n                {% csrf_token %}\r\n\r\n                {% if request.user.is_authenticated %}\r\n\r\n                    <div class=\"mb-3\">\r\n                        <label for=\"body\" class=\"form-label\">Текст коментария</label>\r\n                        <textarea name=\"body\" id=\"body\" cols=\"30\" rows=\"6\" class=\"form-control\"></textarea>\r\n                    </div>\r\n\r\n                {% else %}\r\n\r\n                    <div class=\"mb-3\">\r\n                        <label for=\"email\" class=\"form-label\">E-mail</label>\r\n                        <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" required>\r\n                    </div>\r\n\r\n                    <div class=\"mb-3\">\r\n                        <label for=\"body\" class=\"form-label\">Текст коментария</label>\r\n                        <textarea name=\"body\" id=\"body\" cols=\"30\" rows=\"6\" class=\"form-control\"></textarea>\r\n                    </div>\r\n\r\n                {% endif %}\r\n            <button type=\"submit\" class=\"btn btn-primary\">Отправить</button>\r\n            </form>\r\n        </div>\r\n    </div>\r\n\r\n\r\n{% endblock %}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/blog/article_view.html b/templates/blog/article_view.html
+--- a/templates/blog/article_view.html	(revision e86192f89c1cf445f24c0930adb957cd8e0619f3)
++++ b/templates/blog/article_view.html	(date 1677433137225)
+@@ -53,6 +53,9 @@
+     {% endif %}
+ 
+ 
++     <p>{{ comments }}</p>
++
++
+     <div class="row">
+         <div class="col-sm-12 col-md-3"></div>
+         <div class="col-sm-12 col-md-6">
+Index: apps/blog/views.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from django.shortcuts import render\r\nfrom django.urls import reverse\r\n\r\nfrom apps.blog.forms import CommentForm\r\nfrom apps.blog.models import BlogCategory, Article, Tag, Comments\r\n\r\n\r\ndef blog_category_list(request):\r\n    blog_categories = BlogCategory.objects.all()\r\n    breadcrumbs = {'current': 'Блог'}\r\n    return render(request, 'blog/category_list.html', {\"categories\": blog_categories, 'breadcrumbs': breadcrumbs})\r\n\r\ndef article_list(request, category_id):\r\n    articles = Article.objects.filter(category_id=category_id)\r\n    category = BlogCategory.objects.get(id=category_id)\r\n    breadcrumbs = {reverse('blog_category_list'): 'Блог', 'current': category.name}\r\n    return render(request, 'blog/article_list.html', {\r\n        'articles': articles,\r\n        'category': category,\r\n        'breadcrumbs': breadcrumbs,\r\n    })\r\n\r\ndef article_view(request, category_id, article_id):\r\n    category = BlogCategory.objects.get(id=category_id)\r\n    article = Article.objects.get(id=article_id)\r\n    breadcrumbs = {reverse('blog_category_list'): 'Блог', reverse('blog_article_list', kwargs={'category_id': category.id}): category.name, 'current': article.title}\r\n\r\n    return render(request, 'blog/article_view.html', {'category': category, 'article': article, 'breadcrumbs': breadcrumbs})\r\n\r\n\r\ndef tag_search_view(request, tag_id):\r\n    tag = Tag.objects.get(id=tag_id)\r\n    articles = Article.objects.filter(tags=tag)\r\n    return render(request, 'blog/tag_search.html', {'tag': tag, 'articles': articles})\r\n\r\n\r\ndef comment_view(request, article_id):\r\n    comments = Comments.objects.get(is_active=True)\r\n    print(comments)\r\n    if request.user.is_authenticated:\r\n        # new_comment = CommentForm.save()\r\n\r\n        form = CommentForm(request.POST, request.FILES)\r\n        if form.is_valid():\r\n            comment = form.save(commit=False)\r\n            comment.save()\r\n            return render(request, 'blog/article_view.html', {'comments': comments})\r\n\r\n    return render(request, 'blog/article_view.html', {})\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/apps/blog/views.py b/apps/blog/views.py
+--- a/apps/blog/views.py	(revision e86192f89c1cf445f24c0930adb957cd8e0619f3)
++++ b/apps/blog/views.py	(date 1677433441474)
+@@ -35,15 +35,14 @@
+ 
+ 
+ def comment_view(request, article_id):
+-    comments = Comments.objects.get(is_active=True)
++    comments = Comments.objects.filter(article=article_id, is_active=True)
+     print(comments)
+     if request.user.is_authenticated:
+         # new_comment = CommentForm.save()
+ 
+         form = CommentForm(request.POST, request.FILES)
+         if form.is_valid():
+-            comment = form.save(commit=False)
+-            comment.save()
++            comment = form.save()
+             return render(request, 'blog/article_view.html', {'comments': comments})
+ 
+     return render(request, 'blog/article_view.html', {})
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"975ef711-92eb-4414-b249-6839098d91ef\" name=\"Changes\" comment=\"homework\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_24_2023_6_03_PM__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_24_2023_6_03_PM__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/apps/blog/admin.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/apps/blog/admin.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/apps/blog/models.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/apps/blog/models.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/apps/blog/views.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/apps/blog/views.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/apps/catalog/models.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/apps/catalog/models.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/templates/blog/article_view.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/templates/blog/article_view.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"DjangoConsoleOptions\" custom-start-script=\"import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)\">\r\n    <option name=\"myCustomStartScript\" value=\"import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2LjUQrwVZl5ZWCmMTeiSdAxYT7b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexe/OneDrive/Documents/GitHub/ziablik/data&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\alexe\\OneDrive\\Documents\\GitHub\\ziablik\\data\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\alexe\\OneDrive\\Documents\\GitHub\\ziablik\\static\" />\r\n      <recent name=\"C:\\Users\\alexe\\OneDrive\\Documents\\GitHub\\ziablik\\templates\\main\" />\r\n      <recent name=\"C:\\Users\\alexe\\OneDrive\\Documents\\GitHub\\ziablik\\data\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"ziablik\" type=\"Python.DjangoServer\" factoryName=\"Django server\">\r\n      <module name=\"ziablik\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n        <env name=\"DJANGO_SETTINGS_MODULE\" value=\"config.settings\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\r\n      <option name=\"port\" value=\"8000\" />\r\n      <option name=\"host\" value=\"\" />\r\n      <option name=\"additionalOptions\" value=\"\" />\r\n      <option name=\"browserUrl\" value=\"\" />\r\n      <option name=\"runTestServer\" value=\"false\" />\r\n      <option name=\"runNoReload\" value=\"false\" />\r\n      <option name=\"useCustomRunCommand\" value=\"false\" />\r\n      <option name=\"customRunCommand\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"975ef711-92eb-4414-b249-6839098d91ef\" name=\"Changes\" comment=\"\" />\r\n      <created>1676383973117</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1676383973117</updated>\r\n      <workItem from=\"1676383986159\" duration=\"2560000\" />\r\n      <workItem from=\"1676652902375\" duration=\"42000\" />\r\n      <workItem from=\"1676653814190\" duration=\"9000\" />\r\n      <workItem from=\"1676832714444\" duration=\"3174000\" />\r\n      <workItem from=\"1676988024015\" duration=\"7206000\" />\r\n      <workItem from=\"1677087781489\" duration=\"6194000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"drf part 4\">\r\n      <created>1676651261338</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1676651261338</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"home page\">\r\n      <created>1677266841746</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677266841746</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"drf categories\" />\r\n    <MESSAGE value=\"drf part 4\" />\r\n    <MESSAGE value=\"home page\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"home page\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/ziablik$views.coverage\" NAME=\"views Coverage Results\" MODIFIED=\"1676576419354\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/apps/api/blog\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision e86192f89c1cf445f24c0930adb957cd8e0619f3)
++++ b/.idea/workspace.xml	(date 1677433384507)
+@@ -1,13 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="975ef711-92eb-4414-b249-6839098d91ef" name="Changes" comment="homework">
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_24_2023_6_03_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_24_2023_6_03_PM__Changes_.xml" afterDir="false" />
++    <list default="true" id="975ef711-92eb-4414-b249-6839098d91ef" name="Changes" comment="comments homework">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM_[Changes]/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_17_2023_6_24_PM__Changes_.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/apps/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blog/admin.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/apps/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blog/models.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/apps/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blog/views.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/apps/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/catalog/models.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/templates/blog/article_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/article_view.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -119,7 +117,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1677266841746</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="comments homework">
++      <created>1677325235437</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1677325235437</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -140,7 +145,8 @@
+     <MESSAGE value="drf categories" />
+     <MESSAGE value="drf part 4" />
+     <MESSAGE value="home page" />
+-    <option name="LAST_COMMIT_MESSAGE" value="home page" />
++    <MESSAGE value="comments homework" />
++    <option name="LAST_COMMIT_MESSAGE" value="comments homework" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/ziablik$views.coverage" NAME="views Coverage Results" MODIFIED="1676576419354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/api/blog" />
